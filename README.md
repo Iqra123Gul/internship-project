@@ -18,6 +18,10 @@ This repository contains my internship tasks.
 
 \- tests/
 
+## Day 3
+
+Installed required libraries and practiced Git branching.
+
 
 
 Author: Iqra Gul
