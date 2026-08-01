@@ -1,0 +1,13 @@
+Image,Prediction,Explanation
+Skier,Correct,Focused on skier
+Girl Jumping,Correct,Focused on girl
+Dog Running,Correct,Focused on dog
+Bubble People,Correct,Focused on faces
+Dog Jumping,Correct,Focused on jumping dog
+Girl Pink Hat,Correct,Focused on girl
+Lacrosse Player,Incorrect,Focused on background
+Quad Bike,Incorrect,Focused on vehicle instead of rider
+Dogs in Grass,Incorrect,Focused on grass
+Fire Truck,Incorrect,Focused on building
+People in Costume,Incorrect,Focused on background decorations
+Woman Jacket,Incorrect,Focused on background lighting
