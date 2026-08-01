@@ -1,0 +1,6 @@
+outs:
+- md5: 653b3cf63b0f2f0443972963115ec650.dir
+  size: 1118129274
+  nfiles: 8092
+  hash: md5
+  path: Flickr8k
