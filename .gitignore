@@ -9,3 +9,5 @@ notebooks/mlruns/
 mlruns/
 iqra01_key.pem
 data/xai_examples/
+app/uploads/
+app/overlays/
