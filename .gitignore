@@ -3,9 +3,11 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
-data/
 mlflow.db
-models/
+# models/ 
 notebooks/mlruns/
 mlruns/
 iqra01_key.pem
+data/xai_examples/
+app/uploads/
+app/overlays/

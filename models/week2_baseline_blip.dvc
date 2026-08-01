@@ -1,0 +1,6 @@
+outs:
+- md5: 94384c2af7c776a8527ff4634f0d8a25.dir
+  size: 896663161
+  nfiles: 6
+  hash: md5
+  path: week2_baseline_blip
