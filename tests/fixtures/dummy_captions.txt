@@ -1,0 +1,7 @@
+image_name|caption_number|caption_text
+dummy1.jpg|0|a small dog running in a park
+dummy1.jpg|1|a dog runs across the grass
+dummy2.jpg|0|a person riding a bicycle
+dummy2.jpg|1|a cyclist rides down the street
+dummy3.jpg|0|a cat sitting on a windowsill
+dummy3.jpg|1|a cat looks out the window

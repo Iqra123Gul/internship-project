@@ -3,6 +3,7 @@ import numpy as np
 import torch
 from PIL import Image
 
+
 def compute_vit_attention_map(model, processor, image_path, device):
     """CLS-token attention map (ViT self-attention, from Week 3 Day 2)."""
     image = Image.open(image_path).convert("RGB")
@@ -18,7 +19,7 @@ def compute_vit_attention_map(model, processor, image_path, device):
             pixel_values=full_inputs["pixel_values"],
             input_ids=full_inputs["input_ids"],
             output_attentions=True,
-            return_dict=True
+            return_dict=True,
         )
 
     attn = forward_out.attentions[-1][0].mean(dim=0)
@@ -30,6 +31,7 @@ def compute_vit_attention_map(model, processor, image_path, device):
 
     return image, heatmap, caption
 
+
 if __name__ == "__main__":
     from model import load_baseline_model
 
@@ -37,6 +39,8 @@ if __name__ == "__main__":
     image_path = os.environ.get("IMAGE_PATH", "/data/sample.jpg")
 
     model, processor, device = load_baseline_model(model_dir)
-    _, heatmap, caption = compute_vit_attention_map(model, processor, image_path, device)
+    _, heatmap, caption = compute_vit_attention_map(
+        model, processor, image_path, device
+    )
     print(f"Caption: {caption}")
     print(f"Heatmap shape: {heatmap.shape}")
