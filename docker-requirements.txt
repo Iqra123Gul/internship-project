@@ -1,6 +1,8 @@
-torch
-transformers
-pandas
-scikit-learn
-pillow
+fastapi
+uvicorn[standard]
+python-multipart
+huggingface_hub
 numpy
+opencv-python-headless
+pillow
+transformers
