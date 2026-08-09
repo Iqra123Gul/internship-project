@@ -52,18 +52,17 @@ async def caption_image(file: UploadFile = File(...), question: str = Form(None)
     with open(image_path, "wb") as f:
         f.write(await file.read())
 
-    # Generate caption
-    caption = generate_caption(model, processor, image_path, device)
+   # Generate caption
+caption = generate_caption(
+    model,
+    processor,
+    image_path,
+    device,
+    num_beams=1,
+    max_new_tokens=15,
+)
 
-    # Compute Grad-CAM-style (ViT attention) overlay
-    image, heatmap, _ = compute_vit_attention_map(model, processor, image_path, device)
-    overlay = overlay_heatmap(image, heatmap)
-
-    overlay_filename = f"{file_id}_overlay.png"
-    overlay_path = os.path.join(OVERLAY_DIR, overlay_filename)
-    Image.fromarray(overlay).save(overlay_path)
-
-    response = {"caption": caption, "gradcam_overlay_path": overlay_path}
+response = {"caption": caption}
 
     if question:
         # Placeholder for VQA track — not implemented in this baseline model
